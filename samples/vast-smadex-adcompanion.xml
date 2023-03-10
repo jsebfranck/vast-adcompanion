@@ -1,0 +1,98 @@
+<VAST version="4.1">
+    <Ad id="1675084609151">
+        <InLine>
+            <AdSystem>
+                <![CDATA[ Ogury Admin Adserver ]]>
+            </AdSystem>
+            <AdServingID>
+                <![CDATA[ Ogury-cf9435d9-f806-4a49-9092-b9eaca62cd6e ]]>
+            </AdServingID>
+            <AdTitle>
+                <![CDATA[ AdExp - End Screen - Vast Html Resource ]]>
+            </AdTitle>
+            <Description>
+                <![CDATA[ AdExp - End Screen - Vast Html Resource ]]>
+            </Description>
+            <Impression>
+                <![CDATA[ https://impression.dumb.io/imps ]]>
+            </Impression>
+            <Creatives>
+                <Creative>
+                    <UniversalAdId idRegistry="unknown">
+                        <![CDATA[ unknown ]]>
+                    </UniversalAdId>
+                    <Linear>
+                        <Duration>
+                            <![CDATA[ 00:00:15 ]]>
+                        </Duration>
+                        <VideoClicks>
+                            <ClickThrough>
+                                <![CDATA[ https://www.ogury.com ]]>
+                            </ClickThrough>
+                        </VideoClicks>
+                        <MediaFiles>
+                            <MediaFile delivery="progressive" bitrate="720" width="640" height="360" type="video/mp4">
+                                <![CDATA[ https://medias.presage.io/medias/videos/35674f8c-e47a-4a56-b243-848ab36932f1.mp4-transcoded/video_360p.mp4 ]]>
+                            </MediaFile>
+                            <MediaFile delivery="progressive" bitrate="1200" width="854" height="480" type="video/mp4">
+                                <![CDATA[ https://medias.presage.io/medias/videos/35674f8c-e47a-4a56-b243-848ab36932f1.mp4-transcoded/video_480p.mp4 ]]>
+                            </MediaFile>
+                            <MediaFile delivery="progressive" bitrate="2400" width="1080" height="608" type="video/mp4">
+                                <![CDATA[ https://medias.presage.io/medias/videos/35674f8c-e47a-4a56-b243-848ab36932f1.mp4-transcoded/video_720p.mp4 ]]>
+                            </MediaFile>
+                            <MediaFile delivery="progressive" bitrate="5400" width="1080" height="608" type="video/mp4">
+                                <![CDATA[ https://medias.presage.io/medias/videos/35674f8c-e47a-4a56-b243-848ab36932f1.mp4-transcoded/video_1080p.mp4 ]]>
+                            </MediaFile>
+                        </MediaFiles>
+                    </Linear>
+                </Creative>
+                <Creative adID="{$CRID$}-Companion">
+                    <CompanionAds required="none">
+                        <Companion width="1080" height="1920">
+                            <HTMLResource>
+                                <![CDATA[<html>
+                                    <head>
+                                        <meta charset="utf-8">
+                                        <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1">
+                                        <meta name="apple-mobile-web-app-capable" content="yes">
+                                        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+                                        <meta name="format-detection" content="telephone=no">
+                                        <meta name="renderer" content="webkit">
+                                        <meta name="force-rendering" content="webkit">
+                                        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+                                        <meta name="msapplication-tap-highlight" content="no">
+                                        <meta name="full-screen" content="yes">
+                                        <meta name="x5-fullscreen" content="true">
+                                        <meta name="360-fullscreen" content="true">
+                                        <meta name="screen-orientation" content="">
+                                        <meta name="x5-orientation" content="">
+                                        <meta name="x5-page-mode" content="app">
+                                        <style>
+                                            html{-ms-touch-action:none} body,canvas,div{outline:0;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;-khtml-user-select:none} body{position:absolute;top:0;left:0;width:100%;height:100%;padding:0;border:0;margin:0;cursor:default} #Cocos2dGameContainer{position:absolute;margin:0;overflow:hidden;left:0;top:0;display:-webkit-box;-webkit-box-orient:horizontal;-webkit-box-align:center;-webkit-box-pack:center} canvas{background-color:rgba(0,0,0,0)}
+                                        </style>
+                                    </head>
+                                    <body>
+                                        <img onclick="redirect()" id="CtaButton" src="https://static-content-1.smadex.com/uploads/creative-testing/Playables/DragonCity/cta.png" style="position: absolute; top: 37.5vh; width: 40vw; height: auto; margin: 0 30vw; z-index: 100;"/>
+                                        <div id="ClickContainer" style="position: absolute; z-index: 0.5; width: 100vw; height: 100vh;"></div>
+                                        <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
+                                        <script type="text/javascript">
+                                            let clickTracking = "{$CLICK_TRACK_URL$}", clickThrough = "{$CLICK_THROUGH_URL$}", asyncClick = "{$ASYNC_CLICK_URL$}", exchangeId = "{$EXCHANGE_ID$}";
+                                        </script>
+                                        <script src="https://static-content-1.smadex.com/uploads/creative-testing/Playables/DragonCity/script_3clicks.js"></script>
+                                    </body>
+                                </html>
+                            ]]>
+                            </HTMLResource>
+                            <CompanionClickThrough>
+                                <![CDATA[https://www.ogury.com/?code=companion-click-through]]>
+                            </CompanionClickThrough>
+                            <CompanionClickTracking>
+                                <![CDATA[https://www.ogury.com/?code=companion-click-tracking]]>
+                            </CompanionClickTracking>
+                        </Companion>
+                    </CompanionAds>
+                </Creative>
+            </Creatives>
+        </InLine>
+    </Ad>
+</VAST>
