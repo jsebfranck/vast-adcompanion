@@ -50,7 +50,8 @@
                     <CompanionAds required="none">
                         <Companion width="1080" height="1920">
                             <HTMLResource>
-                                <![CDATA[<html>
+                            <![CDATA[
+                                                            <html>
                                     <head>
                                         <meta charset="utf-8">
                                         <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1">
@@ -72,36 +73,36 @@
                                         </style>
                                     </head>
                                     <body>
-<script src="mraid.js"></script>
-<div class="celtra-ad-v3">
-    <!-- externalBundleId      = raw [app_bundle] -->
-    <!-- track.adLoading       = raw [celtra_requested_tracking_url] -->
-    <!-- track.creativeLoads   = raw [celtra_loaded_tracking_url] -->
-    <!-- track.creativeRenders = raw [celtra_rendered_tracking_url] -->
-    <!-- externalSessionId     = raw [advert_id] -->
-    <!-- externalCampaignId    = raw [campaignid] -->
-    <img src="data:image/png,celtra" style="display: none" onerror="
-        (function(img) {
-            var params = {'clickUrl':'[celtra_click_tracking_url]','clickEvent':'advertiser','externalAdServer':'Ogury','tagVersion':'html-standard-7'};
-            [].slice.apply(img.parentNode.childNodes).forEach(function(n) { var decfs = { urldecode: decodeURIComponent, htmldecode: function(v) { var d = document.createElement('div'); d.innerHTML = v; return d.textContent; }, eval: function(v) { return eval(v); }, raw: function(v) { return v; } }; var m; if (n.nodeType == 8 &amp;&amp; (m = n.textContent.match(/^&#92;s+([&#92;w%.]+)(&#92;[.+&#92;])?&#92;s+=&#92;s+(&#92;w+)&#92;s+(.*)$/i))) { try { params[m[1]+(m[2] || '')] = decfs[m[3]](m[4].replace(/^&#92;s+|&#92;s+$/g, '')); } catch (e) {} } });
-            var req = document.createElement('script');
-            req.id = params.scriptId = 'celtra-script-' + (window.celtraScriptIndex = (window.celtraScriptIndex||0)+1);
-            params.clientTimestamp = new Date/1000;
-            params.clientTimeZoneOffsetInMinutes = new Date().getTimezoneOffset();
-            params.hostPageLoadId=window.celtraHostPageLoadId=window.celtraHostPageLoadId||(Math.random()+'').slice(2);
-            var qs = '';
-            for (var k in params) {
-                qs += '&amp;' + encodeURIComponent(k) + '=' + encodeURIComponent(params[k]);
-            }
-            var src = 'https://ads.celtra.com/e7cb656e/mraid-ad.js?' + qs;
-            req.src = src;
-            img.parentNode.insertBefore(req, img.nextSibling);
-        })(this);
-    "/>
-</div>                                    
+                                        <div class="celtra-ad-v3">
+                                            <!-- externalBundleId      = raw [app_bundle] -->
+                                            <!-- track.adLoading       = raw [celtra_requested_tracking_url] -->
+                                            <!-- track.creativeLoads   = raw [celtra_loaded_tracking_url] -->
+                                            <!-- track.creativeRenders = raw [celtra_rendered_tracking_url] -->
+                                            <!-- externalSessionId     = raw [advert_id] -->
+                                            <!-- externalCampaignId    = raw [campaignid] -->
+                                            <img src="data:image/png,celtra" style="display: none" onerror="
+                                                (function(img) {
+                                                    var params = {'clickUrl':'[celtra_click_tracking_url]','expandDirection':'undefined','preferredClickThroughWindow':'new','clickEvent':'advertiser','externalAdServer':'Ogury','tagVersion':'html-standard-7'};
+                                                    [].slice.apply(img.parentNode.childNodes).forEach(function(n) { var decfs = { urldecode: decodeURIComponent, htmldecode: function(v) { var d = document.createElement('div'); d.innerHTML = v; return d.textContent; }, eval: function(v) { return eval(v); }, raw: function(v) { return v; } }; var m; if (n.nodeType == 8 &amp;&amp; (m = n.textContent.match(/^&#92;s+([&#92;w%.]+)(&#92;[.+&#92;])?&#92;s+=&#92;s+(&#92;w+)&#92;s+(.*)$/i))) { try { params[m[1]+(m[2] || '')] = decfs[m[3]](m[4].replace(/^&#92;s+|&#92;s+$/g, '')); } catch (e) {} } });
+                                                    var req = document.createElement('script');
+                                                    req.id = params.scriptId = 'celtra-script-' + (window.celtraScriptIndex = (window.celtraScriptIndex||0)+1);
+                                                    params.clientTimestamp = new Date/1000;
+                                                    params.clientTimeZoneOffsetInMinutes = new Date().getTimezoneOffset();
+                                                    params.hostPageLoadId=window.celtraHostPageLoadId=window.celtraHostPageLoadId||(Math.random()+'').slice(2);
+                                                    var qs = '';
+                                                    for (var k in params) {
+                                                        qs += '&amp;' + encodeURIComponent(k) + '=' + encodeURIComponent(params[k]);
+                                                    }
+                                                    var src = 'https://ads.celtra.com/e7cb656e/web.js?' + qs;
+                                                    req.src = src;
+                                                    img.parentNode.insertBefore(req, img.nextSibling);
+                                                })(this);
+                                            "/>
+                                        </div>                                 
 </body>
                                 </html>
-                            ]]>
+ 
+                                ]]>
                             </HTMLResource>
                             <CompanionClickThrough>
                                 <![CDATA[https://www.ogury.com/?code=companion-click-through]]>
